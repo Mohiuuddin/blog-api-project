@@ -2,8 +2,13 @@
 A robust, three-tier blog application featuring a RESTful API, a dedicated Admin Dashboard, and a responsive Client frontend. This project emphasizes a decoupled architecture, separating content management and administrative control from the public reader's interface.
 
 📸 Project Overview
+<img width="1361" height="639" alt="blog-admin" src="https://github.com/user-attachments/assets/aef8016b-1073-4f98-9d5c-8990509178de" />
 
+<img width="1364" height="635" alt="blog-client1" src="https://github.com/user-attachments/assets/7e750773-545b-495d-b352-85c19bf252bc" />
 
+<img width="1366" height="641" alt="blog-client2" src="https://github.com/user-attachments/assets/b3ae68a3-fdbe-4136-95cc-ab29eadd352e" />
+
+🚀 Key Features
 1. Backend (Node.js & Express)
 RESTful API: Clean, standard endpoint design for posts, comments, and authentication.
 
@@ -18,13 +23,12 @@ Full CRUD Operations: A private interface for authors to create, read, update, a
 
 Publishing Workflow: Integrated logic to toggle post visibility (Published vs. Draft) with a single click, instantly updating the public feed.
 
-
 3. Client Frontend (React)
 Public Access: An optimized, high-performance interface designed for reading published articles.
 
 Interactive Engagement: A secure comment system where logged-in users can participate in discussions.
 
-Dynamic State Management: Uses modern React patterns to ensure the UI stays synchronized with the API data without manual refreshes. 
+Dynamic State Management: Uses modern React patterns to ensure the UI stays synchronized with the API data without manual refreshes.
 
 🛠️ Technical Architecture
 Database & Infrastructure
@@ -40,22 +44,22 @@ Persistence: The token is stored in localStorage on the client-side for persiste
 Verification: Incoming requests to protected routes are verified via an Authorization: Bearer header.
 
 📂 Project Structure
-
+Plaintext
 ├── backend/       # Express API, Prisma Schema, JWT & Passport Logic
-├── admin/         # React Admin Dashboard (Content Management)
-└── client/        # React Public Website (Reading & User Engagement) 
-
+├── admin/         # React Admin Dashboard (Content & Comment Management)
+└── client/        # React Public Website (Reading & User Engagement)
 📦 Tech Stack
 Backend: Node.js, Express.js
 
 Database: PostgreSQL, Prisma ORM
 
-Frontend: React, fetch, CSS3
+Frontend: React, Fetch API, CSS3
 
-Security: JWT (JSON Web Tokens), Bcrypt
+Security: JWT (JSON Web Tokens), Bcrypt, Passport.js
+
 ⚙️ Setup & Installation
 Clone the repository:
-git clone https://github.com/Mohiuuddin/blog-api.git
+git clone https://github.com/Mohiuuddin/blog-api-project.git
 
 Environment Setup:
 Create a .env in the /backend folder with your DATABASE_URL and JWT_SECRET.
@@ -69,6 +73,5 @@ Inside /backend, run npx prisma migrate dev.
 Run Application:
 Start the backend server and both frontend development servers using npm run dev.
 
-
 👨‍💻 Author
-Mohiuuddin ICT Professional | Full-Stack Developer
+Md Mohi Uddin, ICT Professional | Full-Stack Developer
