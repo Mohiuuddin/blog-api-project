@@ -51,7 +51,9 @@ export default function Dashboard() {
               >
                 {post.published ? "Unpublish" : "Publish"}
               </button>
-
+               <Link to={`/comment/${post.id}`} className="btn edit-btn">
+                Comments
+              </Link>
               <Link to={`/edit/${post.id}`} className="btn edit-btn">
                 Edit
               </Link>

@@ -5,6 +5,7 @@ import './App.css';
 import Dashboard from "./pages/Dashboard";
 import CreatePost from "./pages/CreatePost";
 import EditPost from "./pages/EditPost";
+import Comments from "./pages/Comments";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import { ErrorPage } from "./components/error";
@@ -56,7 +57,8 @@ const router = createBrowserRouter([
   children: [
     {index: true, element: <Dashboard/>},
     {path: "create", element: <CreatePost/>},
-    {path:"edit/:id", element: <EditPost/>}
+    {path:"edit/:id", element: <EditPost/>},
+    {path:"comment/:id", element:<Comments/>}
   ],
 }
 ]);

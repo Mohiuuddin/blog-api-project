@@ -1,14 +1,7 @@
 const BASE_URL = "http://localhost:3000";
 const getToken = () => localStorage.getItem("token");
 
-// export const getAllPosts = ()=>{
-//   const token = localStorage.getItem("token");
-//   return fetch(`${BASE_URL}/posts/`, {
-//     headers: {
-//       Authorization: `Bearer ${token}`,
-//     },
-//   }).then(res => res.json());
-// };
+
 
 export const getAllPosts = () => {
   const token = localStorage.getItem("token");
@@ -59,4 +52,20 @@ export const deletePost = (id)=>{
   });
 }
 
+
+export const getComments = (postId) => {
+  return fetch(`${BASE_URL}/comments/${postId}`)
+    .then(res => res.json());
+};
+
+export const deleteComment = (id) => {
+  const token = localStorage.getItem("token");
+
+  return fetch(`${BASE_URL}/comments/${id}`, {
+    method: "DELETE",
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+};
 
