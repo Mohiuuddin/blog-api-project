@@ -59,7 +59,7 @@ The Authentication Pipeline
 
   Frontend: React, Fetch API, CSS3
 
-  Security: JWT (JSON Web Tokens), Bcrypt, Passport.js
+  Security: JWT (JSON Web Tokens), Bcrypt
 
 ⚙️ Setup & Installation
 
